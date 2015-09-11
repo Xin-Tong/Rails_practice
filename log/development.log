@@ -8991,3 +8991,324 @@ Started GET "/assets/arrow.png" for 127.0.0.1 at 2015-09-11 10:32:24 -0700
 
 
 Started GET "/assets/add.png" for 127.0.0.1 at 2015-09-11 10:32:24 -0700
+
+
+Started GET "/movies/5" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 5]]
+  Rendered movies/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 69ms (Views: 67.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2015-09-11 14:32:51 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-11 14:32:53 -0700
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE (released_on <= '2015-09-11 21:32:53.495319')  ORDER BY released_on desc[0m
+  Rendered movies/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2015-09-11 14:32:53 -0700
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2015-09-11 14:32:53 -0700
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2015-09-11 14:32:53 -0700
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2015-09-11 14:32:53 -0700
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2015-09-11 14:32:53 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE (released_on <= '2015-09-11 21:32:54.754716')  ORDER BY released_on desc
+  Rendered movies/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 75ms (Views: 74.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2015-09-11 14:32:54 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE (released_on <= '2015-09-11 21:35:46.442696')  ORDER BY released_on desc[0m
+  Rendered movies/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2015-09-11 14:35:46 -0700
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2015-09-11 14:35:47 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered movies/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-11 14:35:53 -0700
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE (released_on <= '2015-09-11 21:35:53.910562')  ORDER BY released_on desc
+  Rendered movies/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2015-09-11 14:37:15 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  Rendered movies/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 69ms (Views: 68.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  Rendered movies/show.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 37.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-11 14:39:56 -0700
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2015-09-11 14:39:56 -0700

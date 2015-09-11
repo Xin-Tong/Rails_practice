@@ -20,8 +20,8 @@ module MoviesHelper
      content_tag(:strong, 'No reviews')
    else
      #pluralize(movie.average_stars, 'star')
-     #pluralize(number_with_precision(movie.average_stars, precision: 1) , 'star')
-     "*" * movie.average_stars.round
+     pluralize(number_with_precision(movie.average_stars, precision: 1) , 'star')
+     #"*" * movie.average_stars.round
    end
  end
 end
